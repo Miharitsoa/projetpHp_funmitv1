@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de connexion</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	
+.container{
+	max-width: 600px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: red;
+	color: white;
+	padding: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	color: blue;
+	margin-bottom: 40px;
+}
+
+label{
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],input[type="password"]{
+	width: 100%;
+	padding: 4px 8px;
+	border: 3px solid white;
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font-size: 14pt;
+}
+
+button[type="submit"]{
+	display: inline-flex;
+	width: 50%;
+	height: 75%;
+	padding: 6px 12px;
+	background-color: white;
+	font-size: 15pt;
+	color: red;
+	border: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+button[type="submit"]:hover{
+	background-color: darkblue;
+}
+</style>
+<body bgcolor="gray">
+	<div class="container">
+		<form action="traitementDonnee_inscription.php" method="post">
+			<h2><strong><i>Formulaire d'inscription <font color="cyan"><u>FUNMIT</u></font></i></strong></h2>
+			<div class="form-group">
+				<label for="nom">Nom:</label>
+				<input type="text" name="nom" id="nom" required>	
+			</div>
+			<div class="form-group">
+				<label for="prenom">Prénom(s):</label>
+				<input type="text" name="prenom" id="prenom" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Adresse e-mail:</label>
+				<input type="text" name="email" id="email" required>
+			</div>
+			<div class="form-group">
+				<label for="login">Definir un login ou pseudo de connexion:</label>
+				<input type="text" name="login" id="login" required>				
+			</div>
+			<div class="form-group">
+				<label for="password">Mot de passe:</label>
+				<input type="password" name="password" id="password" required>				
+			</div>
+			<div class="form-group">
+				<label for="login">Redefinir votre mot de passe:</label>
+				<input type="password" name="password1" id="password1" required>				
+			</div><br><br>
+			<div class="form-group">
+				<button type="submit">S'inscrire</button>
+			</div>
+		
+		</form>
+	</div>
+</body>
+</html>
